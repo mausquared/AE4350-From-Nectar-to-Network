@@ -7,16 +7,14 @@ This repository contains the implementation of a reinforcement learning project 
 ## Features
 
 ### 3D Hummingbird Environment
-- **True 3D Navigation**: Hummingbird moves in x, y, z coordinates with realistic physics
+- **3D Navigation**: Hummingbird moves in x, y, z coordinates in physics informed environment 
 - **Energy Management System**: Agent must manage energy consumption for movement, hovering, and metabolic costs
-- **Gravity Effects**: Realistic gravitational forces affecting flight dynamics
-- **Multiple Flowers**: Environment contains multiple nectar sources at different heights with regeneration mechanics
+- **Multiple Flowers**: Environment contains multiple nectar sources at different heights with regeneration mechanics 
 - **Flower Cooldowns**: Flowers have cooldown periods after being visited to prevent camping
 
 ### Reinforcement Learning Implementation
 - **PPO Algorithm**: Uses Stable Baselines3 PPO implementation for policy optimization
 - **Autonomous Learning**: Minimal reward engineering to allow emergent strategies
-- **Comprehensive Training**: Support for various training durations and continuation of existing models
 - **Real-time Visualization**: Matplotlib-based 3D visualization during training and testing
 
 ### Analysis and Evaluation
@@ -26,8 +24,7 @@ This repository contains the implementation of a reinforcement learning project 
 - **Model Comparison**: Tools to compare different trained models and analyze their strategies
 
 ### Project Tools
-- **Interactive Launcher**: User-friendly menu system for all project operations
-- **Automated Reporting**: Scripts to generate comprehensive training reports and PDF exports
+- **Interactive Launcher**: menu system for all project operations
 - **Model Management**: Organized storage and versioning of trained models
 - **Debugging Tools**: Various debugging and testing utilities for environment and model validation
 
@@ -122,16 +119,16 @@ AE4350/
 └── README.md                   # This file
 ```
 
-## Key Components
+## Main Components
 
 ### Environment (`hummingbird_env.py`)
 - Custom Gym environment with 3D matplotlib visualization
-- Implements realistic hummingbird flight physics
+- Implements simple hummingbird flight physics
 - Manages flower states, energy consumption, and reward calculation
 
 ### Training (`train.py`)
-- PPO training loop with comprehensive logging
-- Custom callback for tracking detailed statistics
+- PPO training loop with logging
+- Callback for tracking detailed statistics
 - Support for resuming training from checkpoints
 
 ### Evaluation (`detailed_evaluation.py`)
@@ -157,5 +154,3 @@ Generated figures include:
 - Trajectory visualizations
 
 ---
-
-**Note**: This project requires significant computational resources for training. Training times may vary based on hardware specifications and chosen hyperparameters.
