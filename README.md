@@ -154,3 +154,5 @@ Generated figures include:
 - Trajectory visualizations
 
 ---
+
+for contact: mmaurik@student.tudelft.nl
